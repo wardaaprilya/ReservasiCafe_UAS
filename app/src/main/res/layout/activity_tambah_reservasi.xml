@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:paddingBottom="56dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/warnawarni">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <!-- Back and Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/backtoreservasi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/backback" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingStart="8dp"
+                    android:text="Formulir Reservasi"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silahkan isi formulir dibawah dengan benar, kami akan melakukan review atas pesanan yang kamu buat!"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Form Fields -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama*"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outlinetambahreservasi"
+                android:padding="8dp"
+                android:hint="Masukkan Nama"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor HP/Whatsapp*"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outlinetambahreservasi"
+                android:padding="8dp"
+                android:hint="Masukkan Nomor HP/Whatsapp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Reservasi*"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal Reservasi"
+                android:background="@drawable/outlinetambahreservasi"
+                android:padding="8dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu Reservasi*"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+            <Spinner
+                android:id="@+id/spTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outlinetambahreservasi"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catatan (Opsional)"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/etNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Catatan"
+                android:background="@drawable/outlinetambahreservasi"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- Payment Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/outlinetambahreservasi"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Unggah Bukti Pembayaran awal via BRI 30420022 sebesar Rp200.000,00."
+                    android:textSize="12sp" />
+                <ImageButton
+                    android:id="@+id/btnuploadfoto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/upload"
+                    android:contentDescription="Unggah Foto"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btntambahkanreservasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KIRIM"
+                    app:backgroundTint="#397689"
+                    app:strokeColor="#397689"
+                    app:strokeWidth="0.5dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    app:cornerRadius="0dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnbatalkanreservasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BATALKAN"
+                    app:backgroundTint="#FFFFFF"
+                    app:strokeColor="#397689"
+                    app:strokeWidth="0.5dp"
+                    android:textColor="#397689"
+                    app:cornerRadius="0dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

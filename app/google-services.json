@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "678164700226",
+    "firebase_url": "https://uasproject-88600-default-rtdb.firebaseio.com",
+    "project_id": "uasproject-88600",
+    "storage_bucket": "uasproject-88600.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678164700226:android:42ce9d8f059c6ce8f961db",
+        "android_client_info": {
+          "package_name": "com.example.kelompok3_uas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678164700226-pv6b1kbfjuivlflffi0f45m5ocinon6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kelompok3_uas",
+            "certificate_hash": "df56c2d01884f3b90500442e204fb3d9ee0f606b"
+          }
+        },
+        {
+          "client_id": "678164700226-ukcq6us4vh1m9hj768v7fj2maus6nkst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAqD47AudxK45giyToDQXKpN6c6lpCZIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678164700226-h280ippbcgangj4dckl83gkleb1ilnih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/reservasiNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/reservasiTanggal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        app:layout_constraintTop_toBottomOf="@id/reservasiNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/reservasiWaktu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        app:layout_constraintTop_toBottomOf="@id/reservasiTanggal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/reservasiCatatan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Catatan"
+        app:layout_constraintTop_toBottomOf="@id/reservasiWaktu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/reservasibuktiPembayaranURL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="URL Bukti Pembayaran"
+        app:layout_constraintTop_toBottomOf="@id/reservasiCatatan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/reservasiStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        app:layout_constraintTop_toBottomOf="@id/reservasibuktiPembayaranURL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnApprove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terima"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/reservasiStatus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tolak"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/reservasiStatus"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol selesai hanya muncul di ListReservasiFragment -->
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/reservasiStatus"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

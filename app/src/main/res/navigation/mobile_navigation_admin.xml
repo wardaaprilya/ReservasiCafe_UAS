@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_admin"
+    app:startDestination="@+id/navigation_reviewreservasi">
+
+    <fragment
+        android:id="@+id/navigation_listreservasi"
+        android:name="com.example.kelompok3_uas.ui.listreservasi.ListReservasiFragment"
+        tools:layout="@layout/fragment_list_reservasi">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_reviewreservasi"
+        android:name="com.example.kelompok3_uas.ui.reviewreservasi.ReviewReservasiFragment"
+        tools:layout="@layout/fragment_review_reservasi">
+    </fragment>
+
+
+</navigation>

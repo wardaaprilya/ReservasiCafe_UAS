@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nuiz"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:background="@drawable/logolatarwarna"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radiusbgadmin"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masuk Sebagai Admin"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emailinputadmin"
+            android:hint="Masukkan Email"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/passInputadmin"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonloginadmin"
+            android:layout_width="180dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/daftarloginbutton"
+            android:text="Masuk"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

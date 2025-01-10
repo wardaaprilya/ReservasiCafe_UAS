@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NUIZed</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_reservasi">Reservasi</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_notifikasi">Notifikasi</string>
+    <string name="client_id">678164700226-ukcq6us4vh1m9hj768v7fj2maus6nkst.apps.googleusercontent.com</string>
+</resources>

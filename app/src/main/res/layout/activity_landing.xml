@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:background="@drawable/nuizedlanding"/>
+
+        <Button
+            android:id="@+id/buttonMasuk"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:background="@drawable/daftarloginbutton"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            style=""/>
+
+        <Button
+            android:id="@+id/buttonDaftar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/daftarloginbutton"
+            android:text="Daftar"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+                <TextView
+                    android:id="@+id/textviewmasuksebagaiadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk sebagai admin?"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="#397689"/>
+
+        </LinearLayout>
+
+</LinearLayout>

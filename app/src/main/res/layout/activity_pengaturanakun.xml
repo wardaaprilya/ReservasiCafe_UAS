@@ -1,0 +1,155 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="56dp"
+    android:paddingBottom="56dp"
+    android:background="@color/warnawarni">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/backttothejungle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/backback"
+                    android:contentDescription="Kembali ke halaman sebelumnya" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="8dp"
+                android:text="Pengaturan Akun"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/profileimage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/housekeeper"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- Username TextView and EditText -->
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Username"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="username" />
+
+            <!-- Email TextView for Google login -->
+            <TextView
+                android:id="@+id/textViewEmailGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Google"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <!-- Email TextView for Email/Password login -->
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Email"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <!-- Password for email/password login -->
+            <EditText
+                android:id="@+id/editTextPasswordNew"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="New Password"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btneditprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubah Profile"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                app:backgroundTint="#FFFFFF"
+                app:strokeColor="#397689"
+                android:textColor="#397689"
+                app:cornerRadius="0dp"
+                android:contentDescription="Tombol untuk mengubah profil" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

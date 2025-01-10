@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="56dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/backtooprofile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/backback" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="8dp"
+                android:text="Syarat dan Ketentuan"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berikut syarat dan ketentuan aplikasi reservasi:\n\nDengan menggunakan aplikasi ini, Anda dianggap telah membaca, memahami dan menyetujui semua syarat dan ketentuan berikut. Pendaftaran dilakukan dengan data benar dan akurat. Kami berhak mengumpulkan dan mengolah data pribadi pengguna untuk tujuan reservasi dan komunikasi. Pembayaran harus dilakukan sesuai metode dan tenggat waktu yang ditentukan\n\nReservasi hanya dapat dilakukan oleh pengguna terdaftar minimal 24 jam sebelum tanggal kedatangan. Perubahan reservasi hanya dapat dilakukan dengan persetujuan penyedia jasa. Pembayaran harus dilakukan dalam waktu 1 jam setelah reservasi. Pengguna bertanggung jawab menjaga kerahasiaan data pribadi dan mematuhi syarat serta ketentuan."
+                android:textSize="14sp"
+                android:textAlignment="gravity"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:background="#397689"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
